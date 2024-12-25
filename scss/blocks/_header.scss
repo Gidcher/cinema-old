@@ -1,0 +1,51 @@
+.header {
+  min-height: 60px;
+
+  background-color: $color-black;
+  color: $color-alt;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    width: 177px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_account {
+      width: 60px;
+      aspect-ratio: 1;
+    }
+
+    &.is-active {
+      background-color: $color-alt;
+      color: $color-black;
+    }
+
+    &:hover {
+      background-color: $color-gray;
+      color: $color-black;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__item {
+      width: 65px;
+      font-size: .75rem;
+    }
+  }
+}
+
