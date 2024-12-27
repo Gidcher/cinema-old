@@ -107,8 +107,20 @@ img .poster {
   aspect-ratio: 2/3;
 }
 
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 767px) {
+  .visible-mobile {
+    display: none !important;
+  }
+}
 .header {
   min-height: 60px;
+  position: sticky;
+  top: 0;
   background-color: #1A1A1A;
   color: #E0E0E0;
   font-size: 1.25rem;
@@ -116,8 +128,6 @@ img .poster {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
-  top: 0;
 }
 .header__list {
   list-style: none;
@@ -133,24 +143,70 @@ img .poster {
   width: 60px;
   aspect-ratio: 1;
 }
-.header__item.is-active {
-  background-color: #E0E0E0;
-  color: #1A1A1A;
-}
 .header__item:hover {
   background-color: #7D7D7D;
   color: #1A1A1A;
 }
+.header__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__link.is-active {
+  background-color: #E0E0E0;
+  color: #1A1A1A;
+}
+.header button {
+  background: transparent;
+  border: none;
+  padding: 0.9375rem;
+  cursor: pointer;
+  margin-left: auto;
+  justify-self: flex-end;
+}
+.header .overlay {
+  background: #2F2C2F;
+  opacity: 0.5;
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  display: none;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .header__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: min(15em, 100%);
+    z-index: 10;
+    background-color: #2F2C2F;
+    transition: right 300ms ease-out;
+  }
+  .header__menu.show {
+    right: 0;
+  }
+  .header__menu.show ~ .overlay {
+    display: block;
+  }
+  .header__list {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
   .header__item {
-    width: 65px;
-    font-size: 0.75rem;
+    width: 100%;
+  }
+  .header__item_account {
+    aspect-ratio: unset;
   }
 }
 .footer {
   background-color: #1A1A1A;
-  color: #FFFFFF;
+  color: #E0E0E0;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   display: flex;
@@ -163,7 +219,7 @@ img .poster {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 48px 70px;
+  padding: 3rem 4.375rem;
 }
 .footer__item {
   font-weight: 500;
@@ -172,13 +228,13 @@ img .poster {
 
 @media (max-width: 1440px) {
   .footer__list {
-    padding: 48px 40px;
+    padding: 3rem 2.5rem;
   }
 }
-@media (max-width: 1280px) {
+@media (max-width: 1280px) and (min-width: 768px) {
   .footer__list {
     flex-wrap: wrap;
-    row-gap: 16px;
+    row-gap: 1rem;
   }
   .footer__item {
     flex: 1 1 45%;
@@ -193,7 +249,7 @@ img .poster {
   }
   .footer__list {
     flex-direction: column;
-    row-gap: 20px;
-    padding: 25px 57px;
+    row-gap: 1.25rem;
+    padding: 1.5625rem 3.5625rem;
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=styles.css.map */

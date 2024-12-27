@@ -5,12 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кионтеатр им. Горького</title>
     <link rel="icon" href="./images/icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="header">
+        <button class="visible-mobile" id="open-sidebar-button" onclick="openSidebar()" aria-label="Открыть меню" aria-expanded="false" aria-controls="header__menu">
+            <svg width="34" height="22" viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2H32" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
+                <path d="M2 11H32" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
+                <path d="M2 20H32" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </button>
+
         <nav class="header__menu">
             <ul class="header__list">
+                <li class="visible-mobile">
+                    <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="Закрыть меню">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L19.6722 19.6723" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M2.32776 20L20 2.32771" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </li>
                 <li class="header__item">
                     <a href="./index.html" class="header__link">Сегодня</a>
                 </li>
@@ -20,12 +36,14 @@
                 <li class="header__item">
                     <a href="./halls.html" class="header__link">Залы</a>
                 </li>
-                <li class="header__item is-active">
-                    <a href="./contacts.html" class="header__link">Контакты</a>
+                <li class="header__item">
+                    <a href="./contacts.html" class="header__link is-active" aria-current="page">Контакты</a>
                 </li>
                 <li class="header__item header__item_account">
                     <a href="#" class="header__link">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <span class="visible-mobile">Личный кабинет</span>
+                        <span class="hidden-mobile">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0_30_73" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
                             <circle cx="15" cy="15" r="14.5" fill="#2F2C2F" stroke="#E0E0E0"/>
                             </mask>
@@ -34,11 +52,14 @@
                             <path d="M29.5 25C29.5 25.6466 29.1744 26.3133 28.4777 26.9722C27.7799 27.6321 26.7433 28.2495 25.4209 28.7784C22.7789 29.8352 19.0948 30.5 15 30.5C10.9052 30.5 7.22106 29.8352 4.57909 28.7784C3.25672 28.2495 2.22014 27.6321 1.52233 26.9722C0.825572 26.3133 0.5 25.6466 0.5 25C0.5 24.3534 0.825572 23.6867 1.52233 23.0278C2.22014 22.3679 3.25672 21.7505 4.57909 21.2216C7.22106 20.1648 10.9052 19.5 15 19.5C19.0948 19.5 22.7789 20.1648 25.4209 21.2216C26.7433 21.7505 27.7799 22.3679 28.4777 23.0278C29.1744 23.6867 29.5 24.3534 29.5 25Z" fill="#E0E0E0" stroke="#E0E0E0"/>
                             <circle cx="15" cy="10" r="6.5" fill="#E0E0E0" stroke="#E0E0E0"/>
                             </g>
-                        </svg>  
+                            </svg>  
+                        </span>
                     </a>                          
                 </li>
             </ul>
         </nav>
+
+        <div class="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
     </header>
 
 
