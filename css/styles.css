@@ -253,4 +253,43 @@ img .poster {
     row-gap: 1.25rem;
     padding: 1.5625rem 3.5625rem;
   }
+}
+.section {
+  padding: 48px 70px;
+  color: #E0E0E0;
+}
+.section__title {
+  font-size: 6rem;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.section__line {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+.section__text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2em;
+  margin-bottom: 2rem;
+}
+
+.contacts__map {
+  margin: 0 auto;
+  max-width: 670px;
+  text-align: center;
+  border: #7D7D7D 4px solid;
+  overflow: hidden;
+}
+.contacts__form {
+  background-color: #1A1A1A;
+  display: flex;
+  flex-direction: column;
+  max-width: 670px;
+  padding: 32px 85px;
+  margin: 0 auto;
+  border-radius: 30px;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=styles.css.map */

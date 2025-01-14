@@ -1,0 +1,27 @@
+.section {
+  padding: 48px 70px;
+  color: $color-alt;
+  
+  &__title {
+    font-size: 6rem;
+    line-height: 1em;
+    text-transform: uppercase;
+
+    margin-bottom: 1.5rem;
+  }
+  
+  &__line {
+    margin: 0;
+
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 2em;
+
+    margin-bottom: 2rem;
+  }
+}
