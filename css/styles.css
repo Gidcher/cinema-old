@@ -276,20 +276,109 @@ img .poster {
   margin-bottom: 2rem;
 }
 
-.contacts__map {
-  margin: 0 auto;
-  max-width: 670px;
-  text-align: center;
-  border: #7D7D7D 4px solid;
-  overflow: hidden;
+@media (max-width: 1280px) {
+  .section {
+    padding: 24px 40px;
+  }
+  .section__title {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 16px 10px;
+  }
+  .section__title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .section__line {
+    margin-bottom: 1.5rem;
+  }
+  .section__text {
+    font-size: 0.875rem;
+    line-height: 1.4em;
+    margin-bottom: 1rem;
+  }
 }
 .contacts__form {
+  margin: 0 auto;
+  width: 670px;
+  text-transform: uppercase;
   background-color: #1A1A1A;
+  color: #E0E0E0;
+  padding: 32px 85px;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
-  max-width: 670px;
-  padding: 32px 85px;
-  margin: 0 auto;
-  border-radius: 30px;
+  row-gap: 12px;
   margin-bottom: 2rem;
+}
+.contacts__map {
+  margin: 0 auto;
+  width: 670px;
+  height: 500px;
+  text-align: center;
+  outline: #7D7D7D 4px solid;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .contacts__form {
+    width: 300px;
+    padding: 16px 40px;
+  }
+  .contacts__map {
+    width: 300px;
+    height: 228px;
+  }
+}
+.input {
+  background-color: #7D7D7D;
+  color: #E0E0E0;
+  height: 50px;
+  border: 1px solid #E0E0E0;
+  padding: 10px 15px;
+}
+.input::-moz-placeholder {
+  color: #E0E0E0;
+}
+.input::placeholder {
+  color: #E0E0E0;
+}
+.input:focus {
+  outline: none;
+  background-color: #2F2C2F;
+  color: #E0E0E0;
+}
+
+textarea.input {
+  min-height: 150px;
+  resize: none;
+}
+
+@media (max-width: 768px) {
+  .input {
+    height: 30px;
+    padding: 5px 10px;
+  }
+  textarea.input {
+    min-height: 100px;
+  }
+}
+.btn {
+  min-height: 50px;
+  color: #FFFFFF;
+  border-radius: 30px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+.btn__disabled {
+  background-color: #7D7D7D;
+}
+.btn__available {
+  background-color: #FC9700;
+}
+.btn:focus {
+  outline: none;
 }/*# sourceMappingURL=styles.css.map */
