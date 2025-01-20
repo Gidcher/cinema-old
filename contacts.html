@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кионтеатр им. Горького</title>
+    <title>Контакты - Кионтеатр им. Горького</title>
     <link rel="icon" href="./images/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -16,7 +16,6 @@
                 <path d="M2 20H32" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
             </svg>
         </button>
-
         <nav class="header__menu">
             <ul class="header__list">
                 <li class="visible-mobile">
@@ -40,7 +39,7 @@
                     <a href="./contacts.html" class="header__link is-active" aria-current="page">Контакты</a>
                 </li>
                 <li class="header__item header__item_account">
-                    <a href="#" class="header__link">
+                    <a href="./auth.html" class="header__link">
                         <span class="visible-mobile">Личный кабинет</span>
                         <span class="hidden-mobile">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,44 +57,43 @@
                 </li>
             </ul>
         </nav>
-
         <div class="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
     </header>
-
-    <section class="contacts section">
-        <h1 class="section__title">Контакты</h1>
-        <hr class="section__line">
-        <p class="section__text">
-            Кинотеатр постоянно работает над совершенствованием качества оказываемых услуг. 
-            Наши приоритеты – это безусловная удовлетворенность каждого гостя, посетившего кинотеатр 
-            независимо от места его нахождения. Сообщения, оставленные на этой странице попадут непосредственно 
-            на стол руководителя компании, будут оперативно рассмотрены и решены на самом высоком уровне. 
-            Мы не оставим без внимания ни одно отправленное сообщение, а, в случае указания контактных данных, 
-            гарантируем обратную связь.
-        </p>
-        <form action="" class="contacts__form form">
-            <label for="name">Ваше имя:</label>
-            <input class="input" type="text" id="name" name="name" placeholder="ВВЕДИТЕ ИМЯ" required>
-            <label for="user_email">Ваш e-mail:</label>
-            <input class="input" type="email" id="user_email" name="user_email" placeholder="ВВЕДИТЕ EMAIL" required>
-            <label for="user_text">Текст письма:</label>
-            <textarea class="input" name="user_text" id="user_text" placeholder="ВВЕДИТЕ ТЕКСТ" required></textarea>
-            <button class="btn btn_disabled" type="submit">Отправить</button>
-        </form>
-        <div class="contacts__map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2729.9621338218008!2d29.473034975879454!3d46.824746741641256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9069ec86fe261%3A0x17bb88e6c1df20f7!2z0JrQuNC90L7RgtC10LDRgtGAINC40LwuINCT0L7RgNGM0LrQvtCz0L4!5e0!3m2!1sru!2s!4v1735128763381!5m2!1sru!2s" 
-              width="100%" 
-              height="100%" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-        </div>
-    </section>
-
+    <main>
+        <section class="contacts section">
+            <h1 class="section__title">Контакты</h1>
+            <hr class="section__line">
+            <p class="section__text">
+                Кинотеатр постоянно работает над совершенствованием качества оказываемых услуг. 
+                Наши приоритеты – это безусловная удовлетворенность каждого гостя, посетившего кинотеатр 
+                независимо от места его нахождения. Сообщения, оставленные на этой странице попадут непосредственно 
+                на стол руководителя компании, будут оперативно рассмотрены и решены на самом высоком уровне. 
+                Мы не оставим без внимания ни одно отправленное сообщение, а, в случае указания контактных данных, 
+                гарантируем обратную связь.
+            </p>
+            <form action="" class="contacts__form form">
+                <label for="name">Ваше имя:</label>
+                <input class="input" type="text" id="name" name="name" placeholder="ВВЕДИТЕ ИМЯ" required>
+                <label for="user_email">Ваш e-mail:</label>
+                <input class="input" type="email" id="user_email" name="user_email" placeholder="ВВЕДИТЕ EMAIL" required>
+                <label for="user_text">Текст письма:</label>
+                <textarea class="input" name="user_text" id="user_text" placeholder="ВВЕДИТЕ ТЕКСТ" required></textarea>
+                <button class="btn btn_disabled" type="submit">Отправить</button>
+            </form>
+            <div class="contacts__map">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2729.9621338218008!2d29.473034975879454!3d46.824746741641256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9069ec86fe261%3A0x17bb88e6c1df20f7!2z0JrQuNC90L7RgtC10LDRgtGAINC40LwuINCT0L7RgNGM0LrQvtCz0L4!5e0!3m2!1sru!2s!4v1735128763381!5m2!1sru!2s" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <ul class="footer__list">
             <li class="footer__item footer__item_copyright">
@@ -112,7 +110,6 @@
             </li>
         </ul>
     </footer> 
-    
     <script src="./script.js"></script>
 </body>
 </html>

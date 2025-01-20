@@ -30,6 +30,27 @@ function closeSidebar() {
 
 updateNavbar(media);
 
+// Authorization Form
+function showLogin() {
+  document.getElementById('login-form').style.display = 'flex';
+  document.getElementById('register-form').style.display = 'none';
+
+  document.querySelectorAll('.auth__tab').forEach(tab => {
+    tab.classList.remove('is-active');
+  });
+  document.querySelector('.auth__tab:nth-child(1)').classList.add('is-active');
+}
+
+function showRegister() {
+  document.getElementById('login-form').style.display = 'none';
+  document.getElementById('register-form').style.display = 'flex';
+
+  document.querySelectorAll('.auth__tab').forEach(tab => {
+    tab.classList.remove('is-active');
+  });
+  document.querySelector('.auth__tab:nth-child(2)').classList.add('is-active');
+}
+
 // Contacts Form
 const form = document.querySelector('.contacts__form');
 const inputs = form.querySelectorAll('.input');
@@ -59,3 +80,5 @@ form.addEventListener('reset', () => {
 });
 
 document.addEventListener('DOMContentLoaded', checkFormValidity);
+
+
