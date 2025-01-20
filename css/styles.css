@@ -383,6 +383,7 @@ textarea.input {
 .hall {
   text-transform: uppercase;
   font-size: 1rem;
+  line-height: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -409,19 +410,24 @@ textarea.input {
   text-align: left;
 }
 .hall__seat {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 25px;
   aspect-ratio: 1;
-  text-align: center;
+  outline: 1px solid #E0E0E0;
 }
-.hall__seat.red {
+.hall__seat_red {
   background-color: #D70000;
 }
-.hall__seat.green {
+.hall__seat_green {
   background-color: #0B8D00;
 }
-.hall__seat.blue {
+.hall__seat_blue {
   background-color: #1E00D7;
+}
+.hall__seat_black {
+  background-color: #1A1A1A;
 }
 .hall__screen {
   background-color: #E0E0E0;
@@ -452,7 +458,7 @@ textarea.input {
     width: 10px;
   }
   .hall__screen {
-    padding: 0px 100px;
+    padding: 0 100px;
   }
 }
 .contacts__form {

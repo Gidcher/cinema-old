@@ -1,6 +1,7 @@
 .hall {
   text-transform: uppercase;
   font-size: 1rem;
+  line-height: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,21 +31,27 @@
   }
 
   &__seat {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 25px;
     aspect-ratio: 1;
-    text-align: center;
+    outline: 1px solid $color-alt;
 
-    &.red {
+    &_red {
       background-color: $color-red;
     }
 
-    &.green {
+    &_green {
       background-color: $color-green;
     }
 
-    &.blue {
+    &_blue {
       background-color: $color-blue;
+    }
+
+    &_black {
+      background-color: $color-black;
     }
   }
 
@@ -82,7 +89,7 @@
     }
 
     &__screen {
-      padding: 0px 100px;
+      padding: 0 100px;
     }
   }
 }
