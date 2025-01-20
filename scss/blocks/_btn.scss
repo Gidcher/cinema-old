@@ -5,11 +5,11 @@
   border: none;
   font-family: $font-secondary;
 
-  &__disabled {
+  &_disabled {
     background-color: $color-gray;
   }
 
-  &__available {
+  &_available {
     background-color: $color-accent;
   }
 

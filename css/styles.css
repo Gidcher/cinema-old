@@ -157,10 +157,10 @@ textarea.input {
   border: none;
   font-family: "Roboto", sans-serif;
 }
-.btn__disabled {
+.btn_disabled {
   background-color: #7D7D7D;
 }
-.btn__available {
+.btn_available {
   background-color: #FC9700;
 }
 .btn:focus {
@@ -351,35 +351,6 @@ textarea.input {
     margin-bottom: 1rem;
   }
 }
-.halls__prices {
-  margin: 0 auto;
-  text-transform: uppercase;
-  text-align: center;
-  border-spacing: 5px;
-}
-.halls__prices th, .halls__prices td {
-  background-color: #E0E0E0;
-  color: #1A1A1A;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1em;
-  width: 145px;
-  padding: 10px 30px;
-}
-.halls__price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media (max-width: 768px) {
-  .halls__prices th, .halls__prices td {
-    font-size: 0.875rem;
-    width: 70px;
-    padding: 10px 3px;
-  }
-}
 .hall {
   text-transform: uppercase;
   font-size: 1rem;
@@ -409,26 +380,6 @@ textarea.input {
 .hall__row_number:last-child {
   text-align: left;
 }
-.hall__seat {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25px;
-  aspect-ratio: 1;
-  outline: 1px solid #E0E0E0;
-}
-.hall__seat_red {
-  background-color: #D70000;
-}
-.hall__seat_green {
-  background-color: #0B8D00;
-}
-.hall__seat_blue {
-  background-color: #1E00D7;
-}
-.hall__seat_black {
-  background-color: #1A1A1A;
-}
 .hall__screen {
   background-color: #E0E0E0;
   color: #1A1A1A;
@@ -440,7 +391,7 @@ textarea.input {
 
 @media (max-width: 768px) {
   .hall {
-    font-size: 0.625rem;
+    font-size: 0.5rem;
     row-gap: 10px;
     margin-bottom: 1rem;
   }
@@ -454,11 +405,63 @@ textarea.input {
   .hall__row_number {
     font-size: 0.5rem;
   }
-  .hall__seat {
+  .hall__screen {
+    padding: 2px 100px;
+  }
+}
+.seat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  aspect-ratio: 1;
+  outline: 1px solid #E0E0E0;
+}
+.seat_red {
+  background-color: #D70000;
+}
+.seat_green {
+  background-color: #0B8D00;
+}
+.seat_blue {
+  background-color: #1E00D7;
+}
+.seat_black {
+  background-color: #1A1A1A;
+}
+
+@media (max-width: 768px) {
+  .seat {
     width: 10px;
   }
-  .hall__screen {
-    padding: 0 100px;
+}
+.price {
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  border-spacing: 5px;
+}
+.price th, .price td {
+  background-color: #E0E0E0;
+  color: #1A1A1A;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1em;
+  width: 145px;
+  padding: 10px 30px;
+}
+.price__cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .price th, .price td {
+    font-size: 0.875rem;
+    width: 70px;
+    padding: 10px 3px;
   }
 }
 .contacts__form {

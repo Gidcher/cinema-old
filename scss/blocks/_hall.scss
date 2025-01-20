@@ -30,31 +30,6 @@
     }
   }
 
-  &__seat {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    aspect-ratio: 1;
-    outline: 1px solid $color-alt;
-
-    &_red {
-      background-color: $color-red;
-    }
-
-    &_green {
-      background-color: $color-green;
-    }
-
-    &_blue {
-      background-color: $color-blue;
-    }
-
-    &_black {
-      background-color: $color-black;
-    }
-  }
-
   &__screen {
     background-color: $color-alt;
     color: $color-black;
@@ -67,7 +42,7 @@
 
 @media (max-width: 768px) {
   .hall {
-    font-size: .625rem;
+    font-size: .5rem;
    
     row-gap: 10px;
     margin-bottom: 1rem;
@@ -84,12 +59,8 @@
       }
     }
 
-    &__seat {
-      width: 10px;
-    }
-
     &__screen {
-      padding: 0 100px;
+      padding: 2px 100px;
     }
   }
 }
