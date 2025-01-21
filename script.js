@@ -30,6 +30,12 @@ function closeSidebar() {
 
 updateNavbar(media);
 
+// Movie List
+
+
+
+
+
 // Authorization Form
 function showLogin() {
   document.getElementById('login-form').style.display = 'flex';

@@ -1,0 +1,56 @@
+.movie {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 248px);
+    justify-content: space-between;
+    row-gap: 1.25rem;
+    
+  }
+
+  &__item {
+    cursor: pointer;
+    min-width: 248px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
+
+  &__start {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  @media (max-width: 1280px) {
+    .movie {
+      &__list {
+        grid-template-columns: repeat(3, 248px);
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .movie {
+      &__list {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        column-gap: 1.25rem;
+      }
+
+      &__item {
+        scroll-snap-align: start;
+        margin-bottom: .4rem;
+      }
+
+    }
+  }
+}
+
+
+
