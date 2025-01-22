@@ -14,7 +14,7 @@
 }
 
 .session__item {
-  background-color: var(--color-black);;
+  background-color: var(--color-black);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +35,7 @@
 
 .session__date-button.is-active {
   opacity: 0.8;
-  background-color: var(--color-black);;
+  background-color: var(--color-black);
 }
 
 .session__times {

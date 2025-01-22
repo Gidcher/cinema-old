@@ -28,8 +28,8 @@
   text-align: left;
 }
 .hall__screen {
-  background-color: var(--color-alt);;
-  color: var(--color-black);;
+  background-color: var(--color-alt);
+  color: var(--color-black);
   font-weight: 500;
   line-height: 100%;
   text-align: center;

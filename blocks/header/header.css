@@ -3,18 +3,20 @@
   min-height: 60px;
   position: sticky;
   top: 0;
-  background-color: var(--color-black);;
-  color: var(--color-alt);;
+  background-color: var(--color-black);
+  color: var(--color-alt);
   font-size: 1.25rem;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .header__list {
   list-style: none;
   display: flex;
 }
+
 .header__item {
   width: 177px;
   display: flex;
@@ -27,7 +29,7 @@
 }
 .header__item:hover {
   background-color: var(--color-gray);
-  color: var(--color-black);;
+  color: var(--color-black);
 }
 .header__link {
   width: 100%;
@@ -37,8 +39,8 @@
   align-items: center;
 }
 .header__link.is-active {
-  background-color: var(--color-alt);;
-  color: var(--color-black);;
+  background-color: var(--color-alt);
+  color: var(--color-black);
 }
 .header button {
   background: transparent;

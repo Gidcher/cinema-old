@@ -1,6 +1,6 @@
 .section {
   padding: 48px 70px;
-  color: var(--color-alt);;
+  color: var(--color-alt);
 }
 .section__title {
   font-size: 6rem;

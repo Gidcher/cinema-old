@@ -1,6 +1,6 @@
 .footer {
-  background-color: var(--color-black);;
-  color: var(--color-alt);;
+  background-color: var(--color-black);
+  color: var(--color-alt);
   font-family: var(--font-secondary);
   font-size: 1rem;
   display: flex;

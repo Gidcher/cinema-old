@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   font-size: 1rem;
-  color: var(--color-alt);;
+  color: var(--color-alt);
 }
 .new__info {
   padding-left: 6rem;

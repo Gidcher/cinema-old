@@ -250,6 +250,7 @@ if (
 }
 
 if (page === 'Страница фильма - Кинотеатр им. Горького') {
+
   document.addEventListener('DOMContentLoaded', function () {
     const movieData = JSON.parse(localStorage.getItem('selectedMovie'));
   
@@ -275,7 +276,7 @@ if (page === 'Страница фильма - Кинотеатр им. Горь�
       // Сеансы
       const datePicker = document.querySelector('.session__date-picker');
       const sessionKeys = Object.keys(movieData.session);
-      const dateCount = Math.min(sessionKeys.length, 3); // Ограничиваем числом 3, чтобы выбрать первые 3
+      const dateCount = Math.min(sessionKeys.length, 3); 
 
       for (let i = 0; i < dateCount; i++) {
         const sessionDate = sessionKeys[i];
@@ -289,7 +290,7 @@ if (page === 'Страница фильма - Кинотеатр им. Горь�
       const firstButton = datePicker.querySelector('.session__date-button');
       if (firstButton) {
         firstButton.classList.add('is-active');
-        updateSessions(firstButton.getAttribute('data-session-date')); // Обновляем сеансы для первой даты
+        updateSessions(firstButton.getAttribute('data-session-date')); 
       }
 
       datePicker.addEventListener('click', function (event) {
