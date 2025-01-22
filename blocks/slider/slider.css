@@ -1,0 +1,75 @@
+.slider {
+  display: flex;
+  width: 500%;
+  height: 35rem;
+  transition: all 0.25s ease-in;
+  transform: translateX(0);
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Черный цвет с прозрачностью 50% */
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .slider {
+    height: 50rem;
+  }
+}
+.slider__item {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 1024px) {
+  .slider__item {
+    grid-template-columns: 50% 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .slider__item {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 1fr;
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+.slider__item_1 {
+  background-image: url('../../images/movie/sonic_3/1.jpg');
+}
+
+.slider__item_2 {
+  background-image: url('../images/movie/the_wizard_of_oz/1.jpg');
+}
+
+.slider__item_3 {
+  background-image: url('../../images/movie/ivan_tsarevich_and_the_gray_wolf_6/1.jpg');
+}
+
+.slider__item_4 {
+  background-image: url('../../images/movie/the_last_ronin/1.jpg');
+}
+
+.slider__item_5 {
+  background-image: url('../../images/movie/mufasa_the_lion_king/1.jpg');
+}
+
+
+
+
+

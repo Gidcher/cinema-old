@@ -1,0 +1,32 @@
+.contacts__form {
+  margin: 0 auto;
+  width: 670px;
+  text-transform: uppercase;
+  background-color: var(--color-black);;
+  color: var(--color-alt);;
+  padding: 32px 85px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  margin-bottom: 2rem;
+}
+.contacts__map {
+  margin: 0 auto;
+  width: 670px;
+  height: 500px;
+  text-align: center;
+  outline: #7D7D7D 4px solid;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .contacts__form {
+    width: 300px;
+    padding: 16px 40px;
+  }
+  .contacts__map {
+    width: 300px;
+    height: 228px;
+  }
+}

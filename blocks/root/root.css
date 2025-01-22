@@ -1,0 +1,66 @@
+:root{
+  --font-main: "Oswald", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
+  --color-white: #FFFFFF; 
+  --color-alt: #E0E0E0; 
+  --color-black: #1A1A1A;
+  --color-dark: #2F2C2F;
+  --color-gray: #7D7D7D;
+  --color-accent: #FC9700;
+  --color-green: #0B8D00;
+  --color-blue: #1E00D7;
+  --color-red: #D70000;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  -webkit-clip-path: inset(100%) !important;
+          clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 767px) {
+  .visible-mobile {
+    display: none !important;
+  }
+}

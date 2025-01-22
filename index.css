@@ -1,0 +1,35 @@
+@import url('./vendor/normalize.css');
+@import url('./fonts/fonts.css');
+@import url('./blocks/root/root.css');
+
+@import url('./blocks/input/input.css');
+@import url('./blocks/btn/btn.css');
+
+@import url('./blocks/header/header.css');
+@import url('./blocks/footer/footer.css');
+@import url('./blocks/section/section.css');
+@import url('./blocks/slider/slider.css');
+@import url('./blocks/new/new.css');
+@import url('./blocks/poster/poster.css');
+@import url('./blocks/prev/prev.css');
+@import url('./blocks/next/next.css');
+@import url('./blocks/trail/trail.css');
+@import url('./blocks/hall/hall.css');
+@import url('./blocks/seat/seat.css');
+@import url('./blocks/contacts/contacts.css');
+@import url('./blocks/auth/auth.css');
+
+@import url('./blocks/movie/movie.css');
+@import url('./blocks/session/session.css');
+@import url('./blocks/comments/comments.css');
+@import url('./blocks/modal/modal.css');
+@import url('./blocks/price/price.css');
+
+
+
+
+
+
+
+
+

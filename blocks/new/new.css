@@ -1,0 +1,61 @@
+.new {
+  position: relative;
+  overflow: hidden;
+  font-size: 1rem;
+  color: var(--color-alt);;
+}
+.new__info {
+  padding-left: 6rem;
+  z-index: 100;
+  grid-column: 1/span 1;
+  grid-row: 1/-1;
+}
+@media (max-width: 768px) {
+  .new__info {
+    grid-row: 2/span 1;
+    grid-column: 1/-1;
+    padding-inline: 2rem;
+    text-align: center;
+  }
+}
+.new__title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .new__title {
+    font-size: 1.5rem;
+  }
+}
+.new__description {
+  display: inline-block;
+  margin: 0.875rem 0;
+  font-size: 1em;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .new__description {
+    margin-block: 1.25rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* Ограничение до 3 строк */
+    overflow: hidden;
+  }
+}
+.new__button {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.new__button:hover {
+  opacity: 0.8;
+}
+.new__button:focus {
+  outline: none;
+  border: none;
+}

@@ -1,0 +1,23 @@
+.prev{
+  z-index: 100;
+  position: absolute;
+  width: 4rem;
+  cursor: pointer;
+  opacity: 0.2;
+  transition: all 0.3s ease;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+}
+
+.prev:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .prev{
+    display: none;
+  }
+}
+
+

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница фильма - Кинотеатр им. Горького</title>
+    <link rel="icon" href="./images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header class="header">
+        <button class="visible-mobile" id="open-sidebar-button" onclick="openSidebar()" aria-label="Открыть меню" aria-expanded="false">
+            <svg width="34" height="22" viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2H32" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
+                <path d="M2 11H32" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
+                <path d="M2 20H32" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li class="visible-mobile">
+                    <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="Закрыть меню">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L19.6722 19.6723" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M2.32776 20L20 2.32771" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </li>
+                <li class="header__item">
+                    <a href="./index.html" class="header__link">Сегодня</a>
+                </li>
+                <li class="header__item">
+                    <a href="./soon.html" class="header__link">Скоро</a>
+                </li>
+                <li class="header__item">
+                    <a href="./halls.html" class="header__link">Залы</a>
+                </li>
+                <li class="header__item">
+                    <a href="./contacts.html" class="header__link" aria-current="page">Контакты</a>
+                </li>
+                <li class="header__item header__item_account">
+                    <a href="./auth.html" class="header__link">
+                        <span class="visible-mobile">Личный кабинет</span>
+                        <span class="hidden-mobile">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_30_73" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                            <circle cx="15" cy="15" r="14.5" fill="#2F2C2F" stroke="#E0E0E0"/>
+                            </mask>
+                            <g mask="url(#mask0_30_73)">
+                            <circle cx="15" cy="15" r="14.5" fill="#2F2C2F" stroke="#E0E0E0"/>
+                            <path d="M29.5 25C29.5 25.6466 29.1744 26.3133 28.4777 26.9722C27.7799 27.6321 26.7433 28.2495 25.4209 28.7784C22.7789 29.8352 19.0948 30.5 15 30.5C10.9052 30.5 7.22106 29.8352 4.57909 28.7784C3.25672 28.2495 2.22014 27.6321 1.52233 26.9722C0.825572 26.3133 0.5 25.6466 0.5 25C0.5 24.3534 0.825572 23.6867 1.52233 23.0278C2.22014 22.3679 3.25672 21.7505 4.57909 21.2216C7.22106 20.1648 10.9052 19.5 15 19.5C19.0948 19.5 22.7789 20.1648 25.4209 21.2216C26.7433 21.7505 27.7799 22.3679 28.4777 23.0278C29.1744 23.6867 29.5 24.3534 29.5 25Z" fill="#E0E0E0" stroke="#E0E0E0"/>
+                            <circle cx="15" cy="10" r="6.5" fill="#E0E0E0" stroke="#E0E0E0"/>
+                            </g>
+                            </svg>  
+                        </span>
+                    </a>                          
+                </li>
+            </ul>
+        </nav>
+        <div class="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    </header>
+    <main>
+        <section class="movie section">
+            <h1 class="section__title" data-movie-title>Название фильма</h1>
+            <hr class="section__line">
+            <div class="movie__info">
+                <img 
+                    alt="" 
+                    width="248"
+                    height="375"
+                    loading="lazy"
+                    data-movie-poster
+                >
+                <div class="movie__text">
+                    <div data-movie-start>Старт:</div>
+                    <div data-movie-country>Страна:</div>
+                    <div data-movie-genre>Жанр:</div>
+                    <div data-movie-director>Режиссер:</div>
+                    <div data-movie-script>Сценарий</div>
+                    <div data-movie-starring>В ролях:</div>
+                    <div data-movie-age>Возраст:</div>
+                    <div data-movie-duration>Продолжительность:</div>
+                    <div data-movie-description>Описание:</div>
+                </div>
+            </div>
+            <div class="movie__trailer">
+                <iframe 
+                    style="border:0; width: 100%; height: 100%;"
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                    data-movie-trailer
+                >
+                </iframe>
+            </div>
+        </section>
+
+        <section class="session section" data-movie-session>
+            <h2 class="section__title">Сеансы</h2>
+            <hr class="section__line">
+            <div class="session__date-picker"></div>
+            <div class="session__wrapper"></div>
+        </section>
+
+        <section class="comments section" data-movie-comments>
+            <h2 class="section__title">Комментарии</h2>
+            <hr class="section__line">
+            <div class="comments__list"> 
+                <div class="comments__item" data-movie-comment>
+                    <div class="comments__author" data-movie-comment-author></div>
+                    <div class="comments__text" data-movie-comment-text></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item footer__item_copyright">
+                &copy; 2024 000 "Кинотеатр им. Горького"
+            </li>
+            <li class="footer__item footer__item_address">
+                <address style="font-style: normal;">Адрес: г. Бендеры, ул. Ленина, 10</address>
+            </li>
+            <li class="footer__item footer__item_phone">
+                Телефон кассы: <a href="tel:+37355221019">0/552/2-10-19</a>
+            </li>
+            <li class="footer__item footer__item_author">
+                Разработка сайта: Рустамов Рустам
+            </li>
+        </ul>
+    </footer> 
+    <div class="modal" id="modal-ticket">
+        <div class="modal__content">
+            <button class="modal__close" id="modal-close">&times;</button>
+            <h3>Выберите место</h3>
+            <div class="hall">
+                <div class="hall__rows">
+                    <div class="hall__row">
+                        <div class="hall__row-number">11 ряд</div>
+                        <div class="seat seat_blue" data-seat="167">14</div>
+                        <div class="seat seat_blue" data-seat="166">13</div>
+                        <div class="seat seat_blue" data-seat="165">12</div>
+                        <div class="seat seat_blue" data-seat="164">11</div>
+                        <div class="seat seat_blue" data-seat="163">10</div>
+                        <div class="seat seat_blue" data-seat="162">9</div>
+                        <div class="seat seat_blue" data-seat="161">8</div>
+                        <div class="seat seat_blue" data-seat="160">7</div>
+                        <div class="seat seat_blue" data-seat="159">6</div>
+                        <div class="seat seat_blue" data-seat="158">5</div>
+                        <div class="seat seat_blue" data-seat="157">4</div>
+                        <div class="seat seat_blue" data-seat="156">3</div>
+                        <div class="seat seat_blue" data-seat="155">2</div>
+                        <div class="seat seat_blue" data-seat="154">1</div>
+                        <div class="hall__row-number">11 ряд</div>
+                    </div>
+                    <div class="hall__row">
+                        <div class="hall__row-number">10 ряд</div>
+                        <div class="seat seat_blue" data-seat="153">12</div>
+                        <div class="seat seat_blue" data-seat="152">11</div>
+                        <div class="seat seat_blue" data-seat="151">10</div>
+                        <div class="seat seat_blue" data-seat="150">9</div>
+                        <div class="seat seat_blue" data-seat="149">8</div>
+                        <div class="seat seat_blue" data-seat="148">7</div>
+                        <div class="seat seat_blue" data-seat="147">6</div>
+                        <div class="seat seat_blue" data-seat="146">5</div>
+                        <div class="seat seat_blue" data-seat="145">4</div>
+                        <div class="seat seat_blue" data-seat="144">3</div>
+                        <div class="seat seat_blue" data-seat="143">2</div>
+                        <div class="seat seat_blue" data-seat="142">1</div>
+                        <div class="hall__row-number">10 ряд</div>
+                    </div>
+                    <div class="hall__row">
+                        <div class="hall__row-number">9 ряд</div>
+                        <div class="seat seat_blue" data-seat="141">12</div>
+                        <div class="seat seat_blue" data-seat="140">11</div>
+                        <div class="seat seat_red" data-seat="139">10</div>
+                        <div class="seat seat_red" data-seat="138">9</div>
+                        <div class="seat seat_red" data-seat="137">8</div>
+                        <div class="seat seat_red" data-seat="136">7</div>
+                        <div class="seat seat_red" data-seat="135">6</div>
+                        <div class="seat seat_red" data-seat="134">5</div>
+                        <div class="seat seat_red" data-seat="133">4</div>
+                        <div class="seat seat_red" data-seat="132">3</div>
+                        <div class="seat seat_blue" data-seat="131">2</div>
+                        <div class="seat seat_blue" data-seat="130">1</div>
+                        <div class="hall__row-number">9 ряд</div>
+                    </div>
+                    <div class="hall__row">
+                        <div class="hall__row-number">8 ряд</div>
+                        <div class="seat seat_blue" data-seat="129">12</div>
+                        <div class="seat seat_blue" data-seat="128">11</div>
+                        <div class="seat seat_red" data-seat="127">10</div>
+                        <div class="seat seat_red" data-seat="126">9</div>
+                        <div class="seat seat_red" data-seat="125">8</div>
+                        <div class="seat seat_red" data-seat="124">7</div>
+                        <div class="seat seat_red" data-seat="123">6</div>
+                        <div class="seat seat_red" data-seat="122">5</div>
+                        <div class="seat seat_red" data-seat="121">4</div>
+                        <div class="seat seat_red" data-seat="120">3</div>
+                        <div class="seat seat_blue" data-seat="119">2</div>
+                        <div class="seat seat_blue" data-seat="118">1</div>
+                        <div class="hall__row-number">8 ряд</div>
+                    </div>
+                    <div class="hall__row">
+                        <div class="hall__row-number">7 ряд</div>
+                        <div class="seat seat_green" data-seat="117">17</div>
+                        <div class="seat seat_green" data-seat="116">16</div>
+                        <div class="seat seat_blue" data-seat="115">15</div>
+                        <div class="seat seat_blue" data-seat="114">14</div>
+                        <div class="seat seat_red" data-seat="113">13</div>
+                        <div class="seat seat_red" data-seat="112">12</div>
+                        <div class="seat seat_red" data-seat="111">11</div>
+                        <div class="seat seat_red" data-seat="110">10</div>
+                        <div class="seat seat_red" data-seat="109">9</div>
+                        <div class="seat seat_red" data-seat="108">8</div>
+                        <div class="seat seat_red" data-seat="107">7</div>
+                        <div class="seat seat_red" data-seat="106">6</div>
+                        <div class="seat seat_red" data-seat="105">5</div>
+                        <div class="seat seat_blue" data-seat="104">4</div>
+                        <div class="seat seat_blue" data-seat="103">3</div>
+                        <div class="seat seat_green" data-seat="102">2</div>
+                        <div class="seat seat_green" data-seat="101">1</div>
+                        <div class="hall__row-number">7 ряд</div>
+                    </div>
+                    <div class="hall__row">
+                        <div class="hall__row-number">6 ряд</div>
+                        <div class="seat seat_green" data-seat="100">17</div>
+                        <div class="seat seat_green" data-seat="99">16</div>
+                        <div class="seat seat_blue" data-seat="98">15</div>
+                        <div class="seat seat_blue" data-seat="97">14</div>
+                        <div class="seat seat_red" data-seat="96">13</div>
+                        <div class="seat seat_red" data-seat="95">12</div>
+                        <div class="seat seat_red" data-seat="94">11</div>
+                        <div class="seat seat_red" data-seat="93">10</div>
+                        <div class="seat seat_red" data-seat="92">9</div>
+                        <div class="seat seat_red" data-seat="91">8</div>
+                        <div class="seat seat_red" data-seat="90">7</div>
+                        <div class="seat seat_red" data-seat="89">6</div>
+                        <div class="seat seat_red" data-seat="88">5</div>
+                        <div class="seat seat_blue" data-seat="87">4</div>
+                        <div class="seat seat_blue" data-seat="86">3</div>
+                        <div class="seat seat_green" data-seat="85">2</div>
+                        <div class="seat seat_green" data-seat="84">1</div>
+                        <div class="hall__row-number">6 ряд</div>
+                    </div>
+                    <div class="hall__row">
+                        <div class="hall__row-number">5 ряд</div>
+                        <div class="seat seat_green" data-seat="83">17</div>
+                        <div class="seat seat_green" data-seat="82">16</div>
+                        <div class="seat seat_blue" data-seat="81">15</div>
+                        <div class="seat seat_blue" data-seat="80">14</div>
+                        <div class="seat seat_red" data-seat="79">13</div>
+                        <div class="seat seat_red" data-seat="78">12</div>
+                        <div class="seat seat_red" data-seat="77">11</div>
+                        <div class="seat seat_red" data-seat="76">10</div>
+                        <div class="seat seat_red" data-seat="75">9</div>
+                        <div class="seat seat_red" data-seat="74">8</div>
+                        <div class="seat seat_red" data-seat="73">7</div>
+                        <div class="seat seat_red" data-seat="72">6</div>
+                        <div class="seat seat_red" data-seat="71">5</div>
+                        <div class="seat seat_blue" data-seat="70">4</div>
+                        <div class="seat seat_blue" data-seat="69">3</div>
+                        <div class="seat seat_green" data-seat="68">2</div>
+                        <div class="seat seat_green" data-seat="67">1</div>
+                        <div class="hall__row-number">5 ряд</div>
+                    </div>
+                    <div class="hall__row">
+                        <div class="hall__row-number">4 ряд</div>
+                        <div class="seat seat_green" data-seat="66">17</div>
+                        <div class="seat seat_green" data-seat="65">16</div>
+                        <div class="seat seat_blue" data-seat="64">15</div>
+                        <div class="seat seat_blue" data-seat="63">14</div>
+                        <div class="seat seat_blue" data-seat="62">13</div>
+                        <div class="seat seat_blue" data-seat="61">12</div>
+                        <div class="seat seat_blue" data-seat="60">11</div>
+                        <div class="seat seat_blue" data-seat="59">10</div>
+                        <div class="seat seat_blue" data-seat="58">9</div>
+                        <div class="seat seat_blue" data-seat="57">8</div>
+                        <div class="seat seat_blue" data-seat="56">7</div>
+                        <div class="seat seat_blue" data-seat="55">6</div>
+                        <div class="seat seat_blue" data-seat="54">5</div>
+                        <div class="seat seat_blue" data-seat="53">4</div>
+                        <div class="seat seat_blue" data-seat="52">3</div>
+                        <div class="seat seat_green" data-seat="51">2</div>
+                        <div class="seat seat_green" data-seat="50">1</div>
+                        <div class="hall__row-number">4 ряд</div>
+                    </div>
+                    <div class="hall__row">
+                        <div class="hall__row-number">3 ряд</div>
+                        <div class="seat seat_green" data-seat="49">17</div>
+                        <div class="seat seat_green" data-seat="48">16</div>
+                        <div class="seat seat_blue" data-seat="47">15</div>
+                        <div class="seat seat_blue" data-seat="46">14</div>
+                        <div class="seat seat_blue" data-seat="45">13</div>
+                        <div class="seat seat_blue" data-seat="44">12</div>
+                        <div class="seat seat_blue" data-seat="43">11</div>
+                        <div class="seat seat_blue" data-seat="42">10</div>
+                        <div class="seat seat_blue" data-seat="41">9</div>
+                        <div class="seat seat_blue" data-seat="40">8</div>
+                        <div class="seat seat_blue" data-seat="39">7</div>
+                        <div class="seat seat_blue" data-seat="38">6</div>
+                        <div class="seat seat_blue" data-seat="37">5</div>
+                        <div class="seat seat_blue" data-seat="36">4</div>
+                        <div class="seat seat_blue" data-seat="35">3</div>
+                        <div class="seat seat_green" data-seat="34">2</div>
+                        <div class="seat seat_green" data-seat="33">1</div>
+                        <div class="hall__row-number">3 ряд</div>
+                    </div>
+                    <div class="hall__row">
+                        <div class="hall__row-number">2 ряд</div>
+                        <div class="seat seat_green" data-seat="32">17</div>
+                        <div class="seat seat_green" data-seat="31">16</div>
+                        <div class="seat seat_green" data-seat="30">15</div>
+                        <div class="seat seat_green" data-seat="29">14</div>
+                        <div class="seat seat_green" data-seat="28">13</div>
+                        <div class="seat seat_green" data-seat="27">12</div>
+                        <div class="seat seat_green" data-seat="26">11</div>
+                        <div class="seat seat_green" data-seat="25">10</div>
+                        <div class="seat seat_green" data-seat="24">9</div>
+                        <div class="seat seat_green" data-seat="23">8</div>
+                        <div class="seat seat_green" data-seat="22">7</div>
+                        <div class="seat seat_green" data-seat="21">6</div>
+                        <div class="seat seat_green" data-seat="20">5</div>
+                        <div class="seat seat_green" data-seat="19">4</div>
+                        <div class="seat seat_green" data-seat="18">3</div>
+                        <div class="seat seat_green" data-seat="17">2</div>
+                        <div class="seat seat_green" data-seat="16">1</div>
+                        <div class="hall__row-number">2 ряд</div>
+                    </div>
+                    <div class="hall__row">
+                        <div class="hall__row-number">1 ряд</div>
+                        <div class="seat seat_green" data-seat="15">15</div>
+                        <div class="seat seat_green" data-seat="14">14</div>
+                        <div class="seat seat_green" data-seat="13">13</div>
+                        <div class="seat seat_green" data-seat="12">12</div>
+                        <div class="seat seat_green" data-seat="11">11</div>
+                        <div class="seat seat_green" data-seat="10">10</div>
+                        <div class="seat seat_green" data-seat="9">9</div>
+                        <div class="seat seat_green" data-seat="8">8</div>
+                        <div class="seat seat_green" data-seat="7">7</div>
+                        <div class="seat seat_green" data-seat="6">6</div>
+                        <div class="seat seat_green" data-seat="5">5</div>
+                        <div class="seat seat_green" data-seat="4">4</div>
+                        <div class="seat seat_green" data-seat="3">3</div>
+                        <div class="seat seat_green" data-seat="2">2</div>
+                        <div class="seat seat_green" data-seat="1">1</div>
+                        <div class="hall__row-number">1 ряд</div>
+                    </div>
+                </div>
+                <div class="hall__screen">
+                    Экран
+                </div>
+            </div>
+            <div class="modal__total">
+                <p>Цена: <span id="total-price">0</span> ₽</p>
+                <button id="confirm-ticket" class="btn btn_available">Подтвердить покупку</button>
+            </div>
+        </div>
+    </div>    
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кионтеатр им. Горького</title>
+    <title>Кинотеатр им. Горького</title>
     <link rel="icon" href="./images/icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <header class="header">
-        <button class="visible-mobile" id="open-sidebar-button" onclick="openSidebar()" aria-label="Открыть меню" aria-expanded="false" aria-controls="header__menu">
+        <button class="visible-mobile" id="open-sidebar-button" onclick="openSidebar()" aria-label="Открыть меню" aria-expanded="false">
             <svg width="34" height="22" viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 2H32" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
                 <path d="M2 11H32" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
@@ -60,15 +60,124 @@
         <div class="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
     </header>
     <main>
+        <section class="new">
+            <div class="slider">
+                <div class="slider__item slider__item_1">
+                    <div class="new__info">
+                        <p class="new__title">Соник 3</p>
+                        <p class="new__description">
+                            Соник, Наклз и Тейлз воссоединяются против нового могущественного противника, Ежа Шэдоу, 
+                            таинственного злодея с силами, не похожими ни на что, с чем они сталкивались раньше. 
+                            С их способностями, превосходящими во многих отношениях, команда Соника вынуждена создать 
+                            неожиданный союз в надежде остановить Шэдоу и защитить планету. 
+                        </p>
+                        <button class="new__button btn btn_available" data-movie="sonic_3">
+                            Купить билет
+                        </button>
+                    </div>
+                    <img 
+                        src="./images/movie/sonic_3/poster.png" 
+                        alt=""
+                        class="poster"
+                    >
+                </div>              
+                <div class="slider__item slider__item_2">
+                    <div class="new__info">
+                        <p class="new__title">Волшебник Изумрудного города</p>
+                        <p class="new__description">
+                            В далёком городе живёт девочка Элли. Однажды злая колдунья Гингема наколдовала ураган, который 
+                            унёс Элли и ее собачку Тотошку в страну Жевунов. Чтобы вернуться домой, Элли вместе с 
+                            друзьями — Страшилой, Железным Дровосеком и Трусливым Львом — отправится по желтой кирпичной 
+                            дороге в Изумрудный город на поиски Волшебника, который исполнит их заветные желания.
+                        </p>
+                        <button class="new__button btn btn_available" data-movie="the_wizard_of_oz">
+                            Купить билет
+                        </button>
+                    </div>
+                    <img 
+                        src="./images/movie/the_wizard_of_oz/poster.png" 
+                        alt=""
+                        class="poster"
+                    >
+                </div>               
+                <div class="slider__item slider__item_3">
+                    <div class="new__info">
+                        <p class="new__title">Иван Царевич и Серый Волк 6</p>
+                        <p class="new__description">
+                            По щучьему велению, по царскому хотению Иван и его верные друзья отправляются на волшебную выставку чудес со всего 
+                            сказочного мира — других посмотреть и себя показать. На кону честь Тридевятого царства, а исполняющая желания 
+                            Щука — как назло, возьми да исчезни. Спасать положение, как всегда, приходится Ивану, Серому Волку и Василисе. 
+                            Там, на неведомых дорожках, им предстоит встретить Колобка, отыскать рыбу их мечты и потягаться в смекалке с коварным волшебником. 
+                            А главное, доказать всему сказочному миру, что самое важное в любой сказке — это смелость, дружба и, конечно, любовь.
+                        </p>
+                        <button class="new__button btn btn_available" data-movie="ivan_tsarevich_and_the_gray_wolf_6">
+                            Купить билет
+                        </button>
+                    </div>
+                    <img 
+                        src="./images/movie/ivan_tsarevich_and_the_gray_wolf_6/poster.png" 
+                        alt=""
+                        class="poster"
+                    >
+                </div>              
+                <div class="slider__item slider__item_4">
+                    <div class="new__info">
+                        <p class="new__title">Последний ронин</p>
+                        <p class="new__description">
+                            Действие разворачивается в будущем, где из-за изменений климата, приведших к глобальной ядерной войне, цивилизация 
+                            практически уничтожена. Земли выжжены, города разрушены, техника не работает, бензин перестал быть основным топливом. 
+                            Главная валюта в этом мире — два патрона: 9 и 7,62 мм от АК-47.
+                        </p>
+                        <button class="new__button btn btn_available" data-movie="the_last_ronin">
+                            Купить билет
+                        </button>
+                    </div>
+                    <img 
+                        src="./images/movie/the_last_ronin/poster.png" 
+                        alt=""
+                        class="poster"
+                    >
+                </div>          
+                <div class="slider__item slider__item_5">
+                    <div class="new__info">
+                        <p class="new__title">Муфаса: король лев</p>
+                        <p class="new__description">
+                            Осиротевший Муфаса знакомится с наследником королевских кровей по имени Така. 
+                            Вместе они отправляются в судьбоносное опасное путешествие, которое проверит их дружбу на прочность.
+                        </p>
+                        <button class="new__button btn btn_available" data-movie="mufasa_the_lion_king">
+                            Купить билет
+                        </button>
+                    </div>
+                    <img 
+                        src="./images/movie/mufasa_the_lion_king/poster.png" 
+                        alt=""
+                        class="poster"
+                    >
+                </div>           
+            </div>
+
+            <svg class="prev" xmlns="http://www.w3.org/2000/svg" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)" fill="#fff"/></svg>
+            <svg class="next" xmlns="http://www.w3.org/2000/svg" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)" fill="#fff"/></svg>
+            <div class="trail">
+                <div class="trail__item trail__item_1 is-active"></div>
+                <div class="trail__item trail__item_2"></div>
+                <div class="trail__item trail__item_3"></div>
+                <div class="trail__item trail__item_4"></div>
+                <div class="trail__item trail__item_5"></div>
+            </div>
+        </div>   
+        </section>
+
         <section class="today movie section">
             <h1 class="section__title">Сегодня</h1>
             <hr class="section__line">
             <div class="movie__list">
-                <div class="movie__item">
+                <div class="movie__item" data-movie="sonic_3">
                     <img 
                         src="./images/movie/sonic_3/poster.png" 
                         alt="" 
-                        class="movie__image"
+                        class=" movie__poster"
                         width="248"
                         height="375"
                         loading="lazy"
@@ -76,11 +185,11 @@
                     <h2 class="movie__title">Соник 3</h2>
                     <p class="movie__start">с 27 декабря</p>
                 </div>
-                <div class="movie__item">
+                <div class="movie__item" data-movie="the_wizard_of_oz">
                     <img 
                         src="./images/movie/the_wizard_of_oz/poster.png" 
                         alt="" 
-                        class="movie__image"
+                        class=" movie__poster"
                         width="248"
                         height="375"
                         loading="lazy"
@@ -88,11 +197,11 @@
                     <h2 class="movie__title">Волшебник Изумрудного города</h2>
                     <p class="movie__start">с 2 января</p>
                 </div>
-                <div class="movie__item">
+                <div class="movie__item" data-movie="ivan_tsarevich_and_the_gray_wolf_6">
                     <img 
                         src="./images/movie/ivan_tsarevich_and_the_gray_wolf_6/poster.png" 
                         alt="" 
-                        class="movie__image"
+                        class=" movie__poster"
                         width="248"
                         height="375"
                         loading="lazy"
@@ -100,11 +209,11 @@
                     <h2 class="movie__title">Иван Царевич и Серый Волк 6</h2>
                     <p class="movie__start">с 26 декабря</p>
                 </div>
-                <div class="movie__item">
+                <div class="movie__item" data-movie="the_last_ronin">
                     <img 
                         src="./images/movie/the_last_ronin/poster.png" 
                         alt="" 
-                        class="movie__image"
+                        class=" movie__poster"
                         width="248"
                         height="375"
                         loading="lazy"
@@ -112,11 +221,11 @@
                     <h2 class="movie__title">Последний ронин</h2>
                     <p class="movie__start">с 26 декабря</p>
                 </div>
-                <div class="movie__item">
+                <div class="movie__item" data-movie="mufasa_the_lion_king">
                     <img 
                         src="./images/movie/mufasa_the_lion_king/poster.png" 
                         alt="" 
-                        class="movie__image"
+                        class=" movie__poster"
                         width="248"
                         height="375"
                         loading="lazy"
@@ -124,11 +233,11 @@
                     <h2 class="movie__title">Муфаса: король лев</h2>
                     <p class="movie__start">с 19 декабря</p>
                 </div>
-                <div class="movie__item">
+                <div class="movie__item" data-movie="craven_the_hunter">
                     <img 
                         src="./images/movie/craven_the_hunter/poster.png" 
                         alt="" 
-                        class="movie__image"
+                        class=" movie__poster"
                         width="248"
                         height="375"
                         loading="lazy"
@@ -136,11 +245,11 @@
                     <h2 class="movie__title">Крейвен‑Охотник</h2>
                     <p class="movie__start">с 12 декабря</p>
                 </div>
-                <div class="movie__item">
+                <div class="movie__item" data-movie="the_three_cats_winter_vacation">
                     <img 
                         src="./images/movie/the_three_cats_winter_vacation/poster.png" 
                         alt="" 
-                        class="movie__image"
+                        class=" movie__poster"
                         width="248"
                         height="375"
                         loading="lazy"
@@ -148,11 +257,11 @@
                     <h2 class="movie__title">Три кота. Зимние каникулы</h2>
                     <p class="movie__start">с 12 декабря</p>
                 </div>
-                <div class="movie__item">
+                <div class="movie__item" data-movie="another_world_year_of_the_wolf">
                     <img 
                         src="./images/movie/another_world_year_of_the_wolf/poster.png" 
                         alt="" 
-                        class="movie__image"
+                        class=" movie__poster"
                         width="248"
                         height="375"
                         loading="lazy"
@@ -179,6 +288,8 @@
             </li>
         </ul>
     </footer>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

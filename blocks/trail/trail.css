@@ -1,0 +1,33 @@
+.trail {
+  z-index: 100;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .trail {
+    width: 80%;
+    bottom: 2rem;
+  }
+}
+
+.trail__item {
+  border-top: 3px solid #fff;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.trail__item:hover {
+  opacity: 0.6;
+}
+
+.trail__item.is-active {
+  opacity: 1 !important;
+}
