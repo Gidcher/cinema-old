@@ -13,7 +13,7 @@
 @media (max-width: 768px) {
   .trail {
     width: 80%;
-    bottom: 2rem;
+    bottom: .75rem;
   }
 }
 

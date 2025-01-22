@@ -1,5 +1,12 @@
 .poster {
   justify-self: center;
   align-self: center;
+  position: relative;
   z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .poster {
+    scale: 0.6;
+  }
 }

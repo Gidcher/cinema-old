@@ -14,7 +14,7 @@
   .new__info {
     grid-row: 2/span 1;
     grid-column: 1/-1;
-    padding-inline: 2rem;
+    padding-inline: 1rem;
     text-align: center;
   }
 }
@@ -29,28 +29,44 @@
     font-size: 1.5rem;
   }
 }
+@media (max-width: 480px) {
+  .new__title {
+    font-size: 1rem;
+  }
+}
 .new__description {
   display: inline-block;
   margin: 0.875rem 0;
   font-size: 1em;
   text-align: left;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .new__description {
-    margin-block: 1.25rem;
+    margin: 0.25rem 0;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4; /* Ограничение до 3 строк */
+    -webkit-line-clamp: 6; 
     overflow: hidden;
   }
 }
+@media (max-width: 768px) {
+  .new__description {
+    -webkit-line-clamp: 3;
+  }
+}
 .new__button {
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border-radius: 2rem;
   outline: none;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .new__button {
+    padding: 0 .625rem;
+  }
 }
 .new__button:hover {
   opacity: 0.8;
