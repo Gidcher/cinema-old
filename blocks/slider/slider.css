@@ -6,6 +6,7 @@
   height: 30rem;
   transition: all 0.25s ease-in;
   transform: translateX(0);
+  color: var(--color-white);
 }
 
 .slider::before {
