@@ -1,0 +1,10 @@
+.section__line {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .section__line {
+    margin-bottom: 1.5rem;
+  }
+}

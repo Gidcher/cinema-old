@@ -1,0 +1,9 @@
+.session__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  align-items: center;
+  gap: 15px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--color-gray);
+}

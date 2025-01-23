@@ -9,50 +9,11 @@
   row-gap: 25px;
   margin-bottom: 2rem;
 }
-.hall__rows {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 10px;
-}
-.hall__row {
-  display: flex;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-}
-.hall__row_number:first-child {
-  text-align: right;
-}
-.hall__row_number:last-child {
-  text-align: left;
-}
-.hall__screen {
-  background-color: var(--color-alt);
-  color: var(--color-black);
-  font-weight: 500;
-  line-height: 100%;
-  text-align: center;
-  padding: 5px 236px;
-}
 
 @media (max-width: 768px) {
   .hall {
     font-size: 0.5rem;
     row-gap: 10px;
     margin-bottom: 1rem;
-  }
-  .hall__rows {
-    row-gap: 5px;
-  }
-  .hall__row {
-    -moz-column-gap: 5px;
-         column-gap: 5px;
-  }
-  .hall__row_number {
-    font-size: 0.5rem;
-  }
-  .hall__screen {
-    padding: 2px 100px;
   }
 }

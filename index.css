@@ -2,28 +2,93 @@
 @import url('./fonts/fonts.css');
 @import url('./blocks/root/root.css');
 
-@import url('./blocks/input/input.css');
-@import url('./blocks/btn/btn.css');
-
 @import url('./blocks/header/header.css');
-@import url('./blocks/footer/footer.css');
-@import url('./blocks/section/section.css');
-@import url('./blocks/slider/slider.css');
-@import url('./blocks/new/new.css');
-@import url('./blocks/poster/poster.css');
-@import url('./blocks/prev/prev.css');
-@import url('./blocks/next/next.css');
-@import url('./blocks/trail/trail.css');
-@import url('./blocks/hall/hall.css');
-@import url('./blocks/seat/seat.css');
-@import url('./blocks/contacts/contacts.css');
-@import url('./blocks/auth/auth.css');
+@import url('./blocks/header/__list/header__list.css');
+@import url('./blocks/header/__item/header__item.css');
+@import url('./blocks/header/__item/_account/header__item_account.css');
+@import url('./blocks/header/__link/header__link.css');
+@import url('./blocks/header/__menu/header__menu.css');
 
-@import url('./blocks/movie/movie.css');
-@import url('./blocks/session/session.css');
-@import url('./blocks/comments/comments.css');
+@import url('./blocks/section/section.css');
+@import url('./blocks/section/__title/section__title.css');
+@import url('./blocks/section/__line/section__line.css');
+@import url('./blocks/section/__text/section__text.css');
+
+@import url('./blocks/footer/footer.css');
+@import url('./blocks/footer/__list/footer__list.css');
+@import url('./blocks/footer/__item/footer__item.css');
+
+@import url('./blocks/input/input.css');
+
+@import url('./blocks/btn/btn.css');
+@import url('./blocks/btn/_disabled/btn_disabled.css');
+@import url('./blocks/btn/available/btn_available.css');
+
+@import url('./blocks/slider/slider.css');
+@import url('./blocks/slider/__item/slider__item.css');
+
+@import url('./blocks/poster/poster.css');
+
+@import url('./blocks/prev/prev.css');
+
+@import url('./blocks/next/next.css');
+
+@import url('./blocks/trail/trail.css');
+@import url('./blocks/trail/__item/trail__item.css');
+
+@import url('./blocks/new/new.css');
+@import url('./blocks/new/__info/new__info.css');
+@import url('./blocks/new/__title/new__title.css');
+@import url('./blocks/new/__description/new__description.css');
+@import url('./blocks/new/__button/new__button.css');
+
+@import url('./blocks/hall/hall.css');
+@import url('./blocks/hall/__rows/hall__rows.css');
+@import url('./blocks/hall/__row/hall__row.css');
+@import url('./blocks/hall/__row/_number/hall__row_number.css');
+@import url('./blocks/hall/__screen/hall__screen.css');
+
+@import url('./blocks/seat/seat.css');
+@import url('./blocks/seat/_green/seat_green.css');
+@import url('./blocks/seat/_blue/seat__blue.css');
+@import url('./blocks/seat/_red/seat_red.css');
+@import url('./blocks/seat/_selected/seat_selected.css');
+
+@import url('./blocks/contacts/__form/contacts__form.css');
+@import url('./blocks/contacts/__map/contacts__map.css');
+
+@import url('./blocks/auth/auth.css');
+@import url('./blocks/auth/__wrapper/auth__wrapper.css');
+@import url('./blocks/auth/__form/auth__form.css');
+@import url('./blocks/auth/__tabs/auth__tabs.css');
+@import url('./blocks/auth/__tab/auth__tab.css');
+
+@import url('./blocks/movie/__list/movie__list.css');
+@import url('./blocks/movie/__item/movie__item.css');
+@import url('./blocks/movie/__title/movie__title.css');
+@import url('./blocks/movie/__info/movie__info.css');
+@import url('./blocks/movie/__start/movie__start.css');
+@import url('./blocks/movie/__text/movie__text.css');
+@import url('./blocks/movie/__trailer/movie__trailer.css');
+
+@import url('./blocks/session/__wrapper/session__wrapper.css');
+@import url('./blocks/session/__item/session__item.css');
+@import url('./blocks/session/__date/session__date.css');
+@import url('./blocks/session/__date-picker/session__date-picker.css');
+@import url('./blocks/session/__date-button/session__date-button.css');
+@import url('./blocks/session/__time/session__time.css');
+
+@import url('./blocks/comments/__list/comments__list.css');
+@import url('./blocks/comments/__item/comments__item.css');
+@import url('./blocks/comments/__author/');
+
 @import url('./blocks/modal/modal.css');
+@import url('./blocks/modal/__close/modal__close.css');
+@import url('./blocks/modal/__content/modal__content.css');
+@import url('./blocks/modal/__total/modal__total.css');
+
 @import url('./blocks/price/price.css');
+@import url('./blocks/price/__cell/price__cell.css');
 
 
 

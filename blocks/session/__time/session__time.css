@@ -1,0 +1,9 @@
+.session__time {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  padding: 5px 10px;
+  border-radius: inherit;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+.auth__tab {
+  width: 50%;
+  text-transform: uppercase;
+  background-color: var(--color-black);
+  color: var(--color-alt);
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 20px 0;
+  border: none;
+}
+
+.auth__tab.is-active {
+  background-color: var(--color-alt);
+  color: var(--color-black);
+}
+
+@media (max-width: 768px) {
+  .auth__tab {
+    font-size: 0.875rem;
+    line-height: 1;
+    padding: 10px 0;
+  }
+}

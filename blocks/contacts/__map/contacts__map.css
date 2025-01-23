@@ -1,0 +1,15 @@
+.contacts__map {
+  margin: 0 auto;
+  width: 670px;
+  height: 500px;
+  text-align: center;
+  outline: var(--color-gray) 4px solid;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .contacts__map {
+    width: 300px;
+    height: 228px;
+  }
+}

@@ -1,0 +1,15 @@
+.section__text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2em;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .section__text {
+    font-size: 0.75rem;
+    line-height: 1.4em;
+    margin-bottom: 1rem;
+  }
+}

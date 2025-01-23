@@ -1,0 +1,14 @@
+.movie__item {
+  cursor: pointer;
+  min-width: 248px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .movie__item {
+    scroll-snap-align: start;
+    margin-bottom: 0.4rem;
+  }
+}

@@ -4,6 +4,7 @@
   text-align: center;
   border-spacing: 5px;
 }
+
 .price th, .price td {
   background-color: var(--color-alt);
   color: var(--color-black);
@@ -12,12 +13,6 @@
   line-height: 1em;
   width: 145px;
   padding: 10px 30px;
-}
-.price__cell {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,12 @@
+.hall__row {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .hall__row {
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+  }
+}

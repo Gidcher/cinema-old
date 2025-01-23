@@ -1,0 +1,12 @@
+.hall__row_number:first-child {
+  text-align: right;
+}
+.hall__row_number:last-child {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .hall__row_number {
+    font-size: 0.5rem;
+  }
+}

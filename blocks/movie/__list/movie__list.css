@@ -1,0 +1,28 @@
+.movie__list {
+  display: grid;
+  grid-template-columns: repeat(4, 248px);
+  justify-content: space-between;
+  row-gap: 1.25rem;
+}
+
+@media (max-width: 1280px) {
+  .movie__list {
+    grid-template-columns: repeat(3, 248px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .movie__list {
+    grid-template-columns: repeat(2, 248px);
+  }
+}
+
+@media (max-width: 768px) {
+  .movie__list {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
+  }
+}

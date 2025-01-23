@@ -6,21 +6,10 @@
   aspect-ratio: 1;
   outline: 1px solid var(--color-alt);
 }
-.seat_red {
-  background-color: var(--color-red);
-}
-.seat_green {
-  background-color: var(--color-green);
-}
-.seat_blue {
-  background-color: var(--color-blue);
-}
-.seat_selected {
-  background-color: var(--color-black);
-}
 
 @media (max-width: 768px) {
   .seat {
     width: 10px;
   }
 }
+

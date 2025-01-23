@@ -1,0 +1,22 @@
+.new__description {
+  display: inline-block;
+  margin: 0.875rem 0;
+  font-size: 1em;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .new__description {
+    margin: 0.25rem 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6; 
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .new__description {
+    -webkit-line-clamp: 3;
+  }
+}

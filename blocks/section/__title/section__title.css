@@ -1,0 +1,19 @@
+.section__title {
+  font-size: 6rem;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1280px) {
+  .section__title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__title {
+    font-size: 3rem;
+    text-align: center;
+  }
+}

@@ -5,12 +5,7 @@
   border: none;
   font-family: var(--font-secondary);
 }
-.btn_disabled {
-  background-color: var(--color-gray);
-}
-.btn_available {
-  background-color: var(--color-accent);
-}
+
 .btn:focus {
   outline: none;
 }

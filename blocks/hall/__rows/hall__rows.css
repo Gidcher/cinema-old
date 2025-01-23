@@ -1,0 +1,13 @@
+.hall__rows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .hall__rows {
+    row-gap: 5px;
+  }
+}

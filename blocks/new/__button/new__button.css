@@ -1,0 +1,22 @@
+.new__button {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.new__button:hover {
+  opacity: 0.8;
+}
+.new__button:focus {
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .new__button {
+    padding: 0 .625rem;
+  }
+}

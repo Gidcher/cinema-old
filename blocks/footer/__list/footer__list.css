@@ -1,0 +1,29 @@
+.footer__list {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 4.375rem;
+}
+
+@media (max-width: 1440px) {
+  .footer__list {
+    padding: 3rem 2.5rem;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 768px) {
+  .footer__list {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__list {
+    flex-direction: column;
+    row-gap: 1.25rem;
+    padding: 1.5625rem 3.5625rem;
+  }
+}
